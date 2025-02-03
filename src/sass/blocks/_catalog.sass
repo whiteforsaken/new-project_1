@@ -1,7 +1,70 @@
 .catalog
+    margin-top: 70px
+    &__title
+        font-size: 30px
+        font-weight: 500
+        line-height: 110%
     &__titles-wrapper
-
         display: flex
         flex-direction: row
         align-items: center
         gap: 427px
+    &__links-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+        gap: 32px
+    &__country-button
+        cursor: pointer
+        width: 126px
+        height: 43px
+        border: none
+        padding: 10px 20px 10px 20px
+        background: $main-theme
+        border-radius: 20px
+        &-active
+            background: $button-active-color
+            color: rgb(244, 246, 245)
+.replicas 
+    margin-top: 30px
+    &__button
+        margin-top: 20px
+    &__item 
+        width: 350px
+        height: 730px
+        background: $main-theme
+        padding-left: 20px
+        &--img
+            margin-top: 20px
+        &--author
+            margin-top: 20px
+            color: $font-second-theme-color
+            font-size: 18px
+            font-weight: 500
+            line-height: 21px   
+        &--name
+            margin-top: 10px
+            font-size: 30px
+            font-weight: 500
+            line-height: 35px
+        &--type
+            margin-top: 8px
+            font-size: 18px
+            font-weight: 500
+            line-height: 21px
+        &--price
+            color: $font-color
+            margin-top: 30px
+            font-size: 24px
+            font-weight: 500
+            line-height: 28px
+    &__row-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+        gap: 30px
+        margin-bottom: 30px
+    
+    
