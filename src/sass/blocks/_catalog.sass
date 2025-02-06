@@ -24,15 +24,28 @@
         padding: 10px 20px 10px 20px
         background: $main-theme
         border-radius: 20px
+        transition: all 0.3s
         &-active
             background: $button-active-color
             color: rgb(244, 246, 245)
+        &:hover
+            color: rgb(244, 246, 245)
+            background: rgb(89, 141, 102)
+
 .replicas
     margin-top: 30px
     &__button
         margin-top: 20px
         width: 310px
         height: 65px
+        border: 1px solid $font-color
+        background-color: transparent
+        cursor: pointer
+        font-size: 20px
+        font-family: 'Raleway'
+        font-weight: 500
+        line-height: 20px
+        color: $font-color
     &__item
         width: 350px
         height: 730px
