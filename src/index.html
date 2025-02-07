@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,28 +14,37 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header__navigation navigation">
-                <div class="navigation__wrapper">
-                    <img src="icons/header_main_logo.svg" alt="" class="header__logo main-logo">
-                    <div class="navigation__links"><a href="#replicas-anchor" class="navigation__link">Репродукции</a><a
-                            href="#promo-anchor" class="navigation__link">Новинки</a><a href="#team-anchor"
-                            class="navigation__link">О нас</a><a href="" class="navigation__cart"><img
-                                src="icons/header_cart_icon.svg" alt="" class="navigation__cart-img"></a></div>
-                </div>
-            </nav>
+            <div class="row">
+                <nav class="header__navigation navigation">
+                    <div class="navigation__wrapper">
+                        <img src="icons/header_main_logo.svg" alt="" class="header__logo main-logo">
+                        <div class="navigation__links "><a href="#replicas-anchor"
+                                class="navigation__link">Репродукции</a><a href="#promo-anchor"
+                                class="navigation__link">Новинки</a><a href="#team-anchor" class="navigation__link">О
+                                нас</a><a href="" class="navigation__cart"><img src="icons/header_cart_icon.svg" alt=""
+                                    class="navigation__cart-img"></a></div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="hero">
-        <div class="container hero__wrapper">
-            <img src="img/hero_img_bird.png" alt="" class="hero__img-bird">
-            <div class="hero__img-describe">
-                <h1 class="hero__main-title">Реплики картин <br>от <span class="hero__main-title-brand">Ink.
-                        House</span>
-                </h1>
-                <div class="hero__title-describe">Высокое качество отрисовки на плотной бумаге или льняном <br> холсте.
-                    Редкие
-                    произведения, доступные цены.</div>
-                <button class="hero__button button">Продукция</button>
+        <div class="container">
+            <div class="row">
+                <div class="hero__wrapper">
+                    <img src="img/hero_img_bird.png" alt="" class="hero__img-bird col-6">
+                    <div class="hero__img-describe col-6">
+                        <h1 class="hero__main-title">Реплики картин <br>от <span class="hero__main-title-brand">Ink.
+                                House</span>
+                        </h1>
+                        <div class="hero__title-describe">Высокое качество отрисовки на плотной бумаге или льняном <br>
+                            холсте.
+                            Редкие
+                            произведения, доступные цены.</div>
+                        <button class="hero__button button">Продукция</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
