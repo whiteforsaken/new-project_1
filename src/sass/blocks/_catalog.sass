@@ -15,12 +15,10 @@
         background: $main-theme
         border-radius: 20px
         transition: all 0.3s
-        @include active-status
 
 .replicas
     margin-top: 30px
     &__button
-        @include active-status
         margin-top: 20px
         width: 310px
         height: 65px
@@ -38,7 +36,9 @@
         background: $main-theme
         padding-left: 20px
         &--img
-            margin-top: 20px
+            display: block 
+            margin: 20px auto 0 
+            max-width: 100%
         &--author
             margin-top: 20px
             color: $font-second-theme-color

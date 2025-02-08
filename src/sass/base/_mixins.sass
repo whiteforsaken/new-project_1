@@ -1,12 +1,18 @@
-@mixin hover-status
+@mixin link-hover-status
     transition: all 0.3s
     &:hover
         color: $font-color
-@mixin active-status
-    transition: all 0.3s
-    &:active
-        background: $active-color
 @mixin link-active-status
     transition: all 0.3s
     &:active
         color: $active-color
+@mixin hover-button-status
+    transition: all 0.3s
+    &:hover
+        background: $font-color
+        color: rgb(255, 255, 255)
+@mixin active-button-status
+    transition: all 0.3s
+    &:active , &:hover:active
+        background: $active-color
+        color: rgb(255, 255, 255)

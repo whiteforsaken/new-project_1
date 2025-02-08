@@ -1,9 +1,14 @@
 .promo
-    height: 100%
-    background: url('../img/promo_bg.png') center center/cover no-repeat
-    padding: 70px 0px
-    background-size: contain
-    background-color: $main-bg-theme
+    overflow: hidden
+    &__inner-wrapper
+        height: 100%
+        background: url('../img/promo_bg.png') center top /calc(100vw) auto no-repeat
+        padding: 70px 0
+        background-color: $main-bg-theme
+        position: relative
+        left: 50%  
+        transform: translateX(-50%) 
+        width: 100vw
     &__title
         color: rgb(244, 246, 245)
         font-family: Raleway
@@ -11,6 +16,7 @@
         font-weight: 500
         line-height: 100%
     &__describe
+        margin-top: 20px
         font-size: 17px
         font-weight: 500
         line-height: 150%
@@ -36,3 +42,5 @@
         cursor: pointer
         &:hover
             background: rgb(250, 235, 151)
+        &:active , &:hover:active
+            background: rgb(217, 185, 73)
