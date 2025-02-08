@@ -1,0 +1,12 @@
+@mixin hover-status
+    transition: all 0.3s
+    &:hover
+        color: $font-color
+@mixin active-status
+    transition: all 0.3s
+    &:active
+        background: $active-color
+@mixin link-active-status
+    transition: all 0.3s
+    &:active
+        color: $active-color

@@ -15,16 +15,12 @@
         background: $main-theme
         border-radius: 20px
         transition: all 0.3s
-        &-active
-            background: $button-active-color
-            color: rgb(244, 246, 245)
-        &:hover
-            color: rgb(244, 246, 245)
-            background: rgb(89, 141, 102)
+        @include active-status
 
 .replicas
     margin-top: 30px
     &__button
+        @include active-status
         margin-top: 20px
         width: 310px
         height: 65px
