@@ -18,17 +18,17 @@
     font-weight: 500
   &__button
     cursor: pointer
-    background-color: transparent
     margin-top: 60px
     padding: 20px 60px
     width: 225px
     height: 65px
-    color: $font-color
     font-size: 20px
     font-family: 'Raleway'
     font-weight: 500
     line-height: 23px
     border: 1px solid $font-color
 .button
-  @include hover-status
-  @include active-status
+  transition: all 0.3s
+  &:hover
+    background-color: $font-color
+    color: rgb(244, 246, 245)
