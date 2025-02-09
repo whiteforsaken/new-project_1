@@ -5,7 +5,6 @@
         padding-top: 23px
         display: flex
         flex-direction: row
-        justify-content: space-between
     &__tel
         margin-top: 25px
         text-decoration: none
@@ -25,11 +24,13 @@
     display: block
     color: $font-second-theme-color
     margin-top: 10px
-    @include hover-status
+    @include link-hover-status
+    @include link-active-status
 .social__row
     display: flex
     flex-direction: row
     justify-content: space-between
+    gap: 30px
     &-desc
         color: $font-second-theme-color
         font-size: 12px
